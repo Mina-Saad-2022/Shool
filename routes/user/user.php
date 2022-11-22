@@ -2,36 +2,35 @@
 
 
 
-use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Users\UserController;
 
 
-Route::group(['prefix' => 'admins','as'=>'admin.'], function () {
+Route::group(['prefix' => 'users','as'=>'user.'], function () {
 
     /******************************** to show users   ********************************/
 
-    Route::get('/index', [AdminController::class, 'index'])->name('index');
-    Route::get('/profile', [AdminController::class, 'profile'])->name('profile');
+    Route::get('/index', [UserController::class, 'index'])->name('index');
+    Route::get('/profile', [UserController::class, 'profile'])->name('profile');
 
-    /******************************** to create new teacher ********************************/
+    /******************************** to create new user ********************************/
 
 
     Route::group(['prefix' => 'create'], function () {
-        Route::get('create', [AdminController::class, 'create'])->name('create');
-        Route::post('create', [AdminController::class, 'action_create'])->name('action_create');
+        Route::get('create', [UserController::class, 'create'])->name('create');
+        Route::post('create', [UserController::class, 'action_create'])->name('action_create');
 
     });
 
-    /******************************** to edit the teacher ********************************/
+    /******************************** to edit the user ********************************/
 
     Route::group(['prefix' => 'edit'], function () {
-
-        Route::get('/{id}', [AdminController::class, 'edit'])->name('edit');
-        Route::post('/{id}', [AdminController::class, 'action_edit'])->name('action_edit');
+        Route::get('/{id}', [UserController::class, 'edit'])->name('edit');
+        Route::post('/{id}', [UserController::class, 'action_edit'])->name('action_edit');
 
     });
 
-    /******************************** to delete the teacher ********************************/
+    /******************************** to delete the user ********************************/
 
-    Route::get('/{id}', [AdminController::class, 'delete'])->name('delete');
+    Route::get('/{id}', [UserController::class, 'delete'])->name('delete');
 
 });

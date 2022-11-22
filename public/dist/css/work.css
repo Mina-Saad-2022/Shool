@@ -1,0 +1,189 @@
+*{
+   font-family: "Times New Roman";
+    box-sizing: border-box;
+    /*display: none;*/
+}
+
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link{
+    color:#FFFFFF !important;
+}
+.nav-link{
+    color: white !important;
+}
+
+/*********************** css for number page in table ***********************/
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    min-width: 1.5em !important;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+/*********************** css for title in table ***********************/
+.new_id{
+    width: 10%;
+}
+.new_title{
+    width: 20%;
+}
+.new_des{
+    width: 30%;
+}
+/*********************** css for image in table ***********************/
+.image_book{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/*********************** css for title link in table ***********************/
+.card-header:first-child ,.navbar-expand{
+    background: #30323e  !important;
+    color: #fff;
+}
+.title{
+    background: none;
+}
+
+
+/*********************** for active & not active url in side nav ***********************/
+
+.layout-fixed .main-sidebar{
+    background-color: #293462 !important;
+    color: #FFFFFF;
+}
+.container-fluid{
+    color: #FFFFFF;
+}
+.content-header{
+    padding: 0px;
+}
+.title_button{
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+.new_active{
+    background-color: #5c5656;
+    color: #ffffff !important;
+}
+
+.delete{
+    color:red
+}
+.edit{
+    color:#1F89F5
+}
+
+/*********************** for active title page ***********************/
+
+.breadcrumb-item.active{
+    color: #ffffff
+}
+
+
+/*********************** border for admin home page ***********************/
+
+.os-padding ,.layout-fixed .main-sidebar{
+    border: solid 1px #f4f6f9;
+    box-sizing: content-box;
+}
+.main-header  {
+    height: 59px !important;
+}
+
+/*********************** dropdown-menu ***********************/
+.navbar-nav .dropdown-menu
+{
+    width: 100%;
+    color: #fffffc;
+    background: #3f474e;
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover{
+    background: none;
+    color: #fff;
+}
+
+
+
+
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+    box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
+
+
+
+
+.test_2 {
+   display: none !important;
+
+}
+
+
+.image{
+    width: 31px;
+    height: 31px;
+    padding: 1%;
+    margin-bottom: 4px;
+    border-radius: 50%;
+}
+
+
+
+.edit_image{
+    width: 91px;
+    height: 61px;
+    border-radius: 15%;
+    margin:19%
+}
+
+
+.ion{
+    font-size: 50px !important;
+    top: 0px !important;
+}
+
+
+.image_profile{
+    width:112px;
+    height: 70px;
+    border-radius: 10%;
+}
+
+
+.input_user{
+    margin-left: 13%;
+}
+table{
+    font-size: 14px;
+}
+
+summary{
+    padding: 10px 20px;
+    background: #2d2d2d;
+    color: #fff;
+    border: 1px solid #2d2d2d;
+}
+.content{
+    padding: 20px;
+    border: 1px solid #2d2d2d;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.paginate_button{
+    min-width: 2em !important;
+    padding: 2px !important;
+    border-radius: 50% !important;
+
+}
