@@ -69,7 +69,6 @@ class RegisterController extends Controller
     {
 
 if($data['image'] === null){
-    dd($data->image);
     return User::create([
         'name' => $data['name'],
         'email' => $data['email'],
@@ -105,7 +104,9 @@ else{
         'phone' => $data['phone'],
         'age' => $data['age'],
         'gender' => $data['gender'],
-        'password' => Crypt::encrypt($data['password']),
+//        'password' => Crypt::encrypt($data['password']),
+        'password' => Hash::make($data['password']),
+
     ]);
 
     return redirect(route('home'))->with(["create" => ["Title", "body text"]]);

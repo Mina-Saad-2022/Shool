@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 
@@ -101,7 +102,8 @@ class UserController extends Controller
             User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => Crypt::encrypt($request['password']),
+//                'password' => $request->password,
+                'password' => Hash::make($request->password),
                 'image' => $change_name,
                 'age' => $request->age,
                 'phone' => $request->phone,
@@ -116,7 +118,8 @@ class UserController extends Controller
             User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => Crypt::encrypt($request['password']),
+//                'password' => Crypt::encrypt($request['password']),
+                'password' => $request->password,
                 'age' => $request->age,
                 'phone' => $request->phone,
                 'gender' => $request->gender,
@@ -162,7 +165,8 @@ class UserController extends Controller
         $user_findorfail->update([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => Crypt::encrypt($request['password']),
+//            'password' => Crypt::encrypt($request['password']),
+            'password' => $request->password,
             'image' => $change_name,
             'age' => $request->age,
             'phone' => $request->phone,

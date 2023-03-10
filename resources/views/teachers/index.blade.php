@@ -75,7 +75,7 @@
 
                 <td>
                     @foreach($teacher->sections as $section)
-                        {{$section->sections}}
+                        {{$section->subjects}}
                     @endforeach
                 </td>
                 <td>

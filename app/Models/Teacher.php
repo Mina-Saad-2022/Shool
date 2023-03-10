@@ -21,7 +21,12 @@ class Teacher extends Model
 
 
     /**************************************** to relationship ****************************************/
+    public function teacher()
+    {
+        return $this->hasMany(Section::class,'section_teacher');
 
+//    return $this->hasMany(Teacher::class, 'id');
+    }
 
 
 

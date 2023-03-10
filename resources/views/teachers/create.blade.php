@@ -45,7 +45,7 @@
                     <label for="formGroupExampleInput">{{ __('auth.section') }} :</label>
                     <select name='subject' class="form-control form-select form-select-sm"
                             aria-label=".form-select-sm example">
-                        @foreach($subjects as $Section)
+                    @foreach($subjects as $Section)
                             <option value="{{$Section->id}}">{{$Section->sections}}</option>
                         @endforeach
 

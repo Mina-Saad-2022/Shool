@@ -46,6 +46,6 @@ Route::get('/', function () {
 /******* to show all books *******/
 
 
-Auth::routes();
+\Illuminate\Support\Facades\Auth::routes();
 
 //Route::get('/home/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

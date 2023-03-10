@@ -44,7 +44,6 @@
             @csrf
             <div class="m-auto">
                 <div class="row input_user">
-
                     <div class="col-lg-4 col-sm-10 ">
                         <label for="formGroupExampleInput" class="col-form-label text-md-end"> {{ __('auth.name') }}
                             :</label>
@@ -67,7 +66,6 @@
                         @endif
                     </div>
                 </div>
-
                 <div class="row input_user">
                     <div class="col-lg-4 col-sm-10 ">
                         <label for="formGroupExampleInput" class="col-form-label text-md-end"> {{ __('auth.age') }}
